@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: white;
+    margin: 1em;
+    font-family: 'Inconsolata', monospace;
+}
+
+a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: #fd7f07;
+}
+
+a:active {
+    text-decoration:none;
+}
+
+                                            /*HEADER*/
+.lista-navegacao{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 5em 2em;
+    border-bottom: 1.2px solid black;
+    margin-bottom: 2em;
+    padding-bottom: 1.2em;
+    font-size: 16px;
+
+}
+
+.lista-botao{
+    background-color: white;
+    padding: 3px;
+    border: 0.2px solid #fd7f07;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+}
+
+.lista-botao:hover{
+    background-color: #fd7f07;
+    color: white;
+    padding: 3px;
+    border: 0.2px solid black;
+}
+
+.foto-logo{
+    max-width: 80px;
+    margin-left: 2em;
+    transform: translateY(100%);
+    
+}
+                                                /*MAIN*/
+.texto-foto-principal{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: black;
+}
+
+.texto-foto-principal:hover{
+    color: #fd7f07;
+}
+
+.foto-principal{
+    background-image: url(../assets/Prancheta1.PNG);
+    background-color: white;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+}
+
+.menu-apresentacao-foto{ 
+    width: 500px;
+    float: right;
+    margin-left: 20px;
+    transform: translateY();
+    
+}
+
+.menu-apresentacao{
+    padding: 20px;
+    border-top: 1.2px solid black;
+} 
+
+.menu-apresentacao-texto{
+    text-align: justify;
+    margin: 8px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.menu-apresentacao-texto-titulo{
+    font-size: 30px;
+    text-align: justify;
+    margin: 8px;
+    padding: 12px;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    padding: 12px;
+}
+
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.titulo:after{
+    content:"";
+    padding: 2px;
+    background-color: #fd7f07;
+    display: flex;
+    width: 10%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.time{
+    width: 100%;
+}
+
+.time-lista{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+
+
+.time-figure{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.time-figure img{
+    width: 100%;
+    filter: opacity(80%);
+}
+
+.time-link:hover .time-figure img{
+    filter: none;
+
+}
+
+.time-descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.time-descricao:target{
+    display: flex;
+}
+
+.time-nome{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.time-nome:after{
+    
+    content:"";
+    padding: 2px;
+    background-color: #fd7f07;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.time-descricao-usuario{
+    margin-top: 3rem;
+    font-size: 18px;
+}
+                                            /*FOOTER*/
+.container-footer{
+    width: 100%;
+    border-top: 1.2px solid black;
+    
+
+}
+
+.logo-footer{
+    width: 80px;
+    padding: 5px;
+    float: left;
+}
+
+.img-footer{
+    width: 18px;
+    margin: 12px;
+    float: right;
+    transform: translateY(50%);
+
+}
+
+@media screen and (max-width: 420px){
+    
+    .navegacao{
+        max-width: 100%;
+     
+    }
+
+    .foto-logo{
+        width: 50px;
+        margin: 0;
+        transform: translateY(170%);
+
+    }
+
+    .texto-foto-principal{
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .foto-principal{
+        margin: 10px;
+        padding: 10px;
+        height: 400px;
+    }
+
+    .menu-apresentacao{
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+    .menu-apresentacao-foto{
+        float:none;
+        width: 300px;
+        
+    }
+
+    .container{
+        height: auto;
+    }
+
+    .time-figure{
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        border-radius: 50%;
+    }
+}
